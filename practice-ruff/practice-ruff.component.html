@@ -1,0 +1,43 @@
+<!-- Two way data binding using ngModel -->
+<div class="container mt-4">
+    <h5>Range filters</h5>
+    <div class="range-filter-section">
+        <input type="range" class="form-control" 
+        min = 0 max = 100 [(ngModel)]="rangeValues"/>
+    </div>
+    <div class="mt-1">
+      <span>the range value: {{rangeValues}}</span>
+    </div>
+</div>
+<!-- Two way data binding using angular input $event -->
+<div class="container mt-4">
+    <h5>Range filters</h5>
+    <div class="range-filter-section">
+        <input type="range" class="form-control" 
+        min = 0 max = 100 (input)="onUpdateRangeValues($event)"/>
+    </div>
+    <div class="mt-1">
+      <span>the range value: {{rangeValuesNumber}}</span>
+    </div>
+</div> 
+
+
+
+<div class="container mt-4">
+   <div class="card col-4">
+        <div class="card-body">
+            <h5>Date Picker</h5>
+            <div>
+                <input type="month" class="form-control" value=""/>
+            </div>
+        </div>
+        <!-- {{presentDate | date:'mediumDate'}} -->
+   </div>
+</div>
+
+
+<div class="container mt-4">
+    <h2 [innerText]="myName"></h2>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <input type="text" [disabled]="isDisabled" placeholder="please enter here..">
+</div>

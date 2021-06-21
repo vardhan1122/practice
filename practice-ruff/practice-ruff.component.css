@@ -1,0 +1,5 @@
+
+
+:host ::ng-deep .range-filter-section .form-control{
+    height:0px !important;
+}
